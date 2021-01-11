@@ -15,7 +15,7 @@ index 0eb3c53e76..b37208ee92 100644
  # file, You can obtain one at http://mozilla.org/MPL/2.0/.
  
 -DIRS += ["doh-rollout", "formautofill", "screenshots", "webcompat", "report-site-issue"]
-+DIRS += ["doh-rollout", "formautofill", "screenshots", "webcompat", "report-site-issue", "ghostery", "ghostery-search", "ghostery-newtab"]
++DIRS += ["doh-rollout", "formautofill", "screenshots", "webcompat", "report-site-issue", "ddg"]
 -- 
 2.29.2
 

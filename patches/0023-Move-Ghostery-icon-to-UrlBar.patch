@@ -15,7 +15,7 @@ index 5de9550f1c..12fbad32ac 100644
            widget.currentArea = aArea;
          }
 -        this.insertWidgetBefore(node, currentNode, container, aArea);
-+        if (node.getAttribute("data-extensionid") === "firefox@ghostery.com") {
++        if (node.getAttribute("data-extensionid") === "jid1-ZAdIEUB7XOzOJw@jetpack") {
 +          const container = window.document.getElementById("urlbar-input-container");
 +          container.insertAdjacentElement('afterbegin', node);
 +        } else {
@@ -28,7 +28,7 @@ index 5de9550f1c..12fbad32ac 100644
        this.ensureButtonContextMenu(widgetNode, aAreaNode);
      }
  
-+    if (widgetNode.getAttribute("data-extensionid") === "firefox@ghostery.com") {
++    if (widgetNode.getAttribute("data-extensionid") === "jid1-ZAdIEUB7XOzOJw@jetpack") {
 +      const container = window.document.getElementById("urlbar-input-container");
 +      container.insertAdjacentElement('afterbegin', widgetNode);
 +      return;

@@ -15,7 +15,6 @@
 0015-Update-strings-for-windows-module-manifest.patch
 0016-Fix-installer-trademark-info.patch
 0017-Allow-setting-service-url-to-be-overrided-by-prefs.patch
-0018-Manual-override-of-search-engine-list.patch
 0019-Firefox-profile-import.patch
 0020-Hide-Library-Synced-Tabs-from-the-menu-panel.patch
 0021-Hide-Firefox-Home-Content-from-preferences.patch
@@ -26,7 +25,6 @@
 0026-Use-the-same-UA-as-Firefox.patch
 0027-Fix-Windows-hidpi-issue.patch
 0028-Allow-update-channel-to-be-configured-via-prefs.patch
-0029-Add-DNS-search-and-websocket-permissions-to-ghostery.patch
 0030-Fix-compiler-error-on-optimised-windows-builds.patch
 0031-Update-text-on-about-license.patch
 0032-Hide-addon-recommendation-badge.patch

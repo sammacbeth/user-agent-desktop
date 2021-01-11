@@ -3,24 +3,25 @@ const path = require("path");
 const fsExtra = require("fs-extra");
 
 const { getRoot } = require("../core/workspace.js");
+const brandName = "ghostery";
 
 async function getPathToSourceBranding() {
   const root = await getRoot();
-  return path.join(root, "brands", "ghostery", "branding");
+  return path.join(root, "brands", brandName, "branding");
 }
 
 async function getPathToSourceDevToolsIcons() {
   const root = await getRoot();
-  return path.join(root, "brands", "ghostery", "devtools", "client", "themes", "images");
+  return path.join(root, "brands", brandName, "devtools", "client", "themes", "images");
 }
 
 async function getPathToSourceWindowsInstaller() {
   const root = await getRoot();
-  return path.join(root, "brands", "ghostery", "windows-installer", "7zSD.Win32.sfx");
+  return path.join(root, "brands", brandName, "windows-installer", "7zSD.Win32.sfx");
 }
 
 
-const brandingPathComponents = ["browser", "branding", "ghostery"];
+const brandingPathComponents = ["browser", "branding", brandName];
 const windowsInstallerPathComponents = ["other-licenses", "7zstub", "firefox", "7zSD.Win32.sfx"];
 const devToolsIconsPathComponents = ["devtools", "client", "themes", "images"];
 const privateBrowsingIconPaths = [
@@ -74,13 +75,13 @@ module.exports = () => ({
     );
     // white ghosty private tab logo
     await copy(
-      ["brands", "ghostery", "branding", "content", "private-ghosty-logo-white.svg"],
+      ["brands", brandName, "branding", "content", "private-ghosty-logo-white.svg"],
       ["browser", "themes", "shared", "icons", "private-browsing.svg"],
       ["browser", "themes", "shared", "privatebrowsing", "private-browsing.svg"],
     );
     // context-fill ghosty private tab logo
     return copy(
-        ["brands", "ghostery", "branding", "content", "private-ghosty-logo.svg"],
+        ["brands", brandName, "branding", "content", "private-ghosty-logo.svg"],
         ["browser", "themes","shared","icons","privateBrowsing.svg"],
         ["browser", "themes", "shared", "privatebrowsing", "favicon.svg"],
     );

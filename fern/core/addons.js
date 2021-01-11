@@ -26,7 +26,7 @@ async function getAddonId(addonName, url) {
   const folder = await getPathToCachedAddon(addonName, url);
   const manifestPath = path.join(folder, 'manifest.json');
   const manifest = require(manifestPath);
-  return manifest['browser_specific_settings']['gecko']['id'];
+  return manifest['applications']['gecko']['id'];
 }
 
 async function use(addons) {
